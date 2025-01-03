@@ -1,0 +1,321 @@
+
+[
+  {
+    "name": "Dark Warlock",
+    "attack": 45,
+    "defense": 30,
+    "health": 180
+  },
+  {
+    "name": "Frost Revenant",
+    "attack": 38,
+    "defense": 35,
+    "health": 210
+  },
+  {
+    "name": "Infernal Behemoth",
+    "attack": 60,
+    "defense": 25,
+    "health": 320
+  },
+  {
+    "name": "Venomous Widow",
+    "attack": 42,
+    "defense": 20,
+    "health": 150
+  },
+  {
+    "name": "Shadow Assassin",
+    "attack": 50,
+    "defense": 15,
+    "health": 140
+  },
+  {
+    "name": "Cursed Wraith",
+    "attack": 35,
+    "defense": 10,
+    "health": 100
+  },
+  {
+    "name": "Crimson Ogre",
+    "attack": 48,
+    "defense": 40,
+    "health": 250
+  },
+  {
+    "name": "Bone Collector",
+    "attack": 33,
+    "defense": 25,
+    "health": 170
+  },
+  {
+    "name": "Iron Golem",
+    "attack": 20,
+    "defense": 50,
+    "health": 300
+  },
+  {
+    "name": "Plague Harbinger",
+    "attack": 40,
+    "defense": 30,
+    "health": 200
+  },
+  {
+    "name": "Savage Werewolf",
+    "attack": 55,
+    "defense": 20,
+    "health": 220
+  },
+  {
+    "name": "Void Stalker",
+    "attack": 45,
+    "defense": 35,
+    "health": 210
+  },
+  {
+    "name": "Arcane Sentinel",
+    "attack": 25,
+    "defense": 50,
+    "health": 250
+  },
+  {
+    "name": "Blazing Salamander",
+    "attack": 42,
+    "defense": 22,
+    "health": 170
+  },
+  {
+    "name": "Soul Reaver",
+    "attack": 50,
+    "defense": 15,
+    "health": 180
+  },
+  {
+    "name": "Nightmare Fiend",
+    "attack": 48,
+    "defense": 18,
+    "health": 190
+  },
+  {
+    "name": "Titan Basilisk",
+    "attack": 55,
+    "defense": 30,
+    "health": 280
+  },
+  {
+    "name": "Chaos Dragon",
+    "attack": 70,
+    "defense": 40,
+    "health": 350
+  },
+  {
+    "name": "Ethereal Specter",
+    "attack": 30,
+    "defense": 20,
+    "health": 120
+  },
+  {
+    "name": "Vampiric Duke",
+    "attack": 60,
+    "defense": 25,
+    "health": 240
+  },
+  {
+    "name": "Gravebound Lich",
+    "attack": 35,
+    "defense": 25,
+    "health": 190
+  },
+  {
+    "name": "Ashen Harpy",
+    "attack": 40,
+    "defense": 15,
+    "health": 160
+  },
+  {
+    "name": "Rotting Colossus",
+    "attack": 50,
+    "defense": 40,
+    "health": 290
+  },
+  {
+    "name": "Thunder Warden",
+    "attack": 47,
+    "defense": 28,
+    "health": 220
+  },
+  {
+    "name": "Hellbound Minotaur",
+    "attack": 58,
+    "defense": 32,
+    "health": 310
+  },
+  {
+    "name": "Twilight Chimera",
+    "attack": 53,
+    "defense": 27,
+    "health": 260
+  },
+  {
+    "name": "Serpent Empress",
+    "attack": 62,
+    "defense": 30,
+    "health": 300
+  },
+  {
+    "name": "Phantom Knight",
+    "attack": 45,
+    "defense": 35,
+    "health": 200
+  },
+  {
+    "name": "Bloodthirster Fiend",
+    "attack": 50,
+    "defense": 15,
+    "health": 190
+  },
+  {
+    "name": "Nether Beast",
+    "attack": 40,
+    "defense": 25,
+    "health": 200
+  },
+  {
+    "name": "Frozen Colossus",
+    "attack": 30,
+    "defense": 55,
+    "health": 330
+  },
+  {
+    "name": "Savage Centaur",
+    "attack": 48,
+    "defense": 25,
+    "health": 210
+  },
+  {
+    "name": "Dread Scorpion",
+    "attack": 45,
+    "defense": 20,
+    "health": 180
+  },
+  {
+    "name": "Blighted Treant",
+    "attack": 38,
+    "defense": 40,
+    "health": 240
+  },
+  {
+    "name": "Infernal Colossus",
+    "attack": 60,
+    "defense": 28,
+    "health": 320
+  },
+  {
+    "name": "Storm Djinn",
+    "attack": 42,
+    "defense": 35,
+    "health": 230
+  },
+  {
+    "name": "Desert Manticore",
+    "attack": 47,
+    "defense": 22,
+    "health": 210
+  },
+  {
+    "name": "Bone Wyvern",
+    "attack": 55,
+    "defense": 20,
+    "health": 250
+  },
+  {
+    "name": "Venomfang Naga",
+    "attack": 50,
+    "defense": 18,
+    "health": 190
+  },
+  {
+    "name": "Ravenous Gorgon",
+    "attack": 52,
+    "defense": 25,
+    "health": 230
+  },
+  {
+    "name": "Void Leaper",
+    "attack": 40,
+    "defense": 30,
+    "health": 180
+  },
+  {
+    "name": "Chaos Warlock",
+    "attack": 65,
+    "defense": 20,
+    "health": 230
+  },
+  {
+    "name": "Glacial Yeti",
+    "attack": 33,
+    "defense": 45,
+    "health": 290
+  },
+  {
+    "name": "Crystal Wyrm",
+    "attack": 48,
+    "defense": 30,
+    "health": 240
+  },
+  {
+    "name": "Skeletal Sorcerer",
+    "attack": 35,
+    "defense": 18,
+    "health": 150
+  },
+  {
+    "name": "Hellfire Demon",
+    "attack": 68,
+    "defense": 25,
+    "health": 340
+  },
+  {
+    "name": "Forest Banshee",
+    "attack": 30,
+    "defense": 12,
+    "health": 120
+  },
+  {
+    "name": "Titan Leviathan",
+    "attack": 62,
+    "defense": 40,
+    "health": 360
+  },
+  {
+    "name": "Silverback Gorilla",
+    "attack": 52,
+    "defense": 25,
+    "health": 220
+  },
+  {
+    "name": "Lava Behemoth",
+    "attack": 70,
+    "defense": 35,
+    "health": 350
+  },
+  {
+    "name": "Soulshade Phantom",
+    "attack": 40,
+    "defense": 20,
+    "health": 160
+  },
+  {
+    "name": "Feral Spirit",
+    "attack": 38,
+    "defense": 20,
+    "health": 140
+  },
+  {
+    "name": "Corrupted Phoenix",
+    "attack": 68,
+    "defense": 32,
+    "health": 320
+  }
+]

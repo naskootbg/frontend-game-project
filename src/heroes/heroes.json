@@ -1,0 +1,107 @@
+[
+    {
+        "name": "Blazefury",
+        "about": "A fiery warrior from the volcanic lands, wielding dual blazing swords.",
+        "health": 1200,
+        "armor": 150,
+        "attack": 250,
+		"image": "img/blazefury.png",
+        "specialSkills": [
+            {"name": "Flame Slash", "attack": 300, "health": 0},
+            {"name": "Molten Shield", "attack": 0, "health": 150},
+            {"name": "Inferno Burst", "attack": 400, "health": -50}
+        ]
+    },
+    {
+        "name": "Frostbane",
+        "about": "An icy mage from the frozen north, mastering frost magic to subdue enemies.",
+        "health": 800,
+        "armor": 100,
+        "attack": 300,
+		"image": "img/icy.png",
+        "specialSkills": [
+            {"name": "Frost Nova", "attack": 320, "health": 0},
+            {"name": "Ice Barrier", "attack": 0, "health": 200},
+            {"name": "Blizzard Storm", "attack": 350, "health": -30}
+        ]
+    },
+    {
+        "name": "Shadowblade",
+        "about": "A stealthy assassin who strikes from the shadows with precision and agility.",
+        "health": 900,
+        "armor": 80,
+        "attack": 320,
+		"image": "img/shadowblade.png",
+        "specialSkills": [
+            {"name": "Shadow Strike", "attack": 400, "health": 0},
+            {"name": "Smoke Bomb", "attack": 0, "health": 100},
+            {"name": "Phantom Dash", "attack": 250, "health": -20}
+        ]
+    },
+    {
+        "name": "Windrunner",
+        "about": "A swift archer blessed by the wind gods, firing arrows with unerring accuracy.",
+        "health": 1000,
+        "armor": 120,
+        "attack": 240,
+		"image": "img/windrunner.png",
+        "specialSkills": [
+            {"name": "Piercing Shot", "attack": 280, "health": 0},
+            {"name": "Wind Gust", "attack": 200, "health": 50},
+            {"name": "Hurricane Volley", "attack": 350, "health": -40}
+        ]
+    },
+    {
+        "name": "Thunderfist",
+        "about": "A martial artist who channels the power of storms into electrifying punches.",
+        "health": 1100,
+        "armor": 100,
+        "attack": 260,
+		"image": "img/thunderfist.png",
+        "specialSkills": [
+            {"name": "Lightning Strike", "attack": 350, "health": 0},
+            {"name": "Storm Punch", "attack": 300, "health": 0},
+            {"name": "Thunderclap", "attack": 250, "health": 80}
+        ]
+    },
+    {
+        "name": "Earthshaker",
+        "about": "A massive titan who wields the strength of the earth to crush his foes.",
+        "health": 1400,
+        "armor": 200,
+        "attack": 200,
+		"image": "img/earthshaker.png",
+        "specialSkills": [
+            {"name": "Seismic Slam", "attack": 250, "health": 100},
+            {"name": "Earthquake", "attack": 300, "health": 50},
+            {"name": "Stone Wall", "attack": 0, "health": 400}
+        ]
+    },
+    {
+        "name": "Celestia",
+        "about": "A radiant healer who channels divine energy to heal allies and smite foes.",
+        "health": 900,
+        "armor": 80,
+        "attack": 220,
+		"image": "img/celestia.png",
+        "specialSkills": [
+            {"name": "Healing Light", "attack": 0, "health": 300},
+            {"name": "Divine Shield", "attack": 0, "health": 400},
+            {"name": "Holy Wrath", "attack": 350, "health": -50}
+        ]
+    },
+    {
+        "name": "Venomstrike",
+        "about": "A toxic hunter who uses poison-tipped weapons to weaken and destroy enemies.",
+        "health": 950,
+        "armor": 90,
+        "attack": 230,
+		"image": "img/venomstrike.png",
+        "specialSkills": [
+            {"name": "Poison Dart", "attack": 300, "health": 0},
+            {"name": "Toxic Cloud", "attack": 250, "health": -20},
+            {"name": "Venomous Bite", "attack": 350, "health": 50}
+        ]
+    }
+]
+
