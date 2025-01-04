@@ -1,9 +1,9 @@
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import Enemies from './components/Enemies.vue';
 
 export default {
   components: {
-    HelloWorld,
+    Enemies,
   },
 };
 </script>

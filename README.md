@@ -13,9 +13,6 @@ See [Vite Configuration Reference](https://vite.dev/config/).
 ## Project Setup
 
 ```sh
-npm i axios
-npm i pinia
-npm install vue-router@4
 npm install
 ```
 
