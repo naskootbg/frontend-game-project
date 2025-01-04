@@ -1,5 +1,6 @@
 <script setup>
 import { ref, watch } from 'vue';
+ 
 
 const props = defineProps({
   enemies:{
@@ -18,7 +19,7 @@ function pickEnemy(creatures){
   theEnemy.value = creatures[random];
 }
  
-
+ 
 watch(() => props.enemies, (newVal) => {
   pickEnemy(newVal);
 }, {
@@ -32,12 +33,12 @@ watch(() => props.enemies, (newVal) => {
       <slot name="icon"></slot>
     </i>
     <div class="details">
-      <h3>Total enemies left: {{ playedEnemies.length }}</h3>
+      
       <ul>
-        
+        <img :src=theEnemy.image />
         <li>Name: <span>{{ theEnemy.name }}</span></li>
         <li>Attack: <span>{{ theEnemy.attack }}</span></li>
-        <li>Deffence: <span>{{ theEnemy.defense }}</span></li>
+        <li>Deffence: <span>{{ theEnemy.armor }}</span></li>
         <li>Health: <span>{{ theEnemy.health }}</span></li>
         <button @click="pickEnemy(enemies)" class="warning">Attack</button>
         <button v-if="playedEnemies.length > 9">Level Up</button>

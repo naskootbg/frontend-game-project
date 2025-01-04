@@ -3,7 +3,7 @@ import { logger } from "@/utils/logger";
 
 export async function GetAllCharacters(){
     try{
-const res = await axiosUrl.get('character/enemy');
+const res = await axiosUrl.get('characters/all');
 return res.data;
     }
     catch (e){
