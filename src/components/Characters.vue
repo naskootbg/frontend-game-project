@@ -1,9 +1,9 @@
 <script setup>
-import { ref, watch } from 'vue';
- 
+import { ref } from 'vue';
+
 
 const props = defineProps({
-  enemies:{
+  characters: {
     required: true,
     type: Array,
   }
@@ -12,36 +12,38 @@ const props = defineProps({
 const playedEnemies = ref([]);
 const theEnemy = ref({});
 const levelUp = false;
-
-function pickEnemy(creatures){
-  const random = Math.floor(Math.random() * creatures.length);
-  playedEnemies.value.push(random);
-  theEnemy.value = creatures[random];
+function play(id) {
+  return "/play?id=" + id;
 }
- 
- 
-watch(() => props.enemies, (newVal) => {
-  pickEnemy(newVal);
-}, {
-  immediate: true,
-});
+
 </script>
 
 <template>
   <div class="item">
-    <i>
-      <slot name="icon"></slot>
-    </i>
+
     <div class="details">
-      
-      <ul>
-        <img :src=theEnemy.image />
-        <li>Name: <span>{{ theEnemy.name }}</span></li>
-        <li>Attack: <span>{{ theEnemy.attack }}</span></li>
-        <li>Deffence: <span>{{ theEnemy.armor }}</span></li>
-        <li>Health: <span>{{ theEnemy.health }}</span></li>
-        <button @click="pickEnemy(enemies)" class="warning">Attack</button>
-        <button v-if="playedEnemies.length > 9">Level Up</button>
+
+      <ul v-for="char in characters">
+        <h2>{{ char.name }}</h2>
+        <p>{{ char.about }}</p>
+        <img :src=char.image />
+        <li>Attack: <span>{{ char.attack }}</span></li>
+        <li>Deffence: <span>{{ char.armor }}</span></li>
+        <li>Health: <span>{{ char.health }}</span></li>
+        <h3>Skills</h3>
+        <li> <span>{{ char.specialSkills[0].name }}
+            - Attack {{ char.specialSkills[0].attack }},
+            Health restore {{ char.specialSkills[0].health }}
+          </span></li>
+        <li> <span>{{ char.specialSkills[1].name }}
+            - Attack {{ char.specialSkills[1].attack }},
+            Health restore {{ char.specialSkills[1].health }}
+          </span></li>
+        <li> <span>{{ char.specialSkills[2].name }}
+            - Attack {{ char.specialSkills[2].attack }},
+            Health restore {{ char.specialSkills[2].health }}
+          </span></li>
+        <a class="pickhero" :href=play(char.id)><span> Play with {{ char.name }} </span></a>
       </ul>
       <slot></slot>
     </div>
@@ -50,20 +52,44 @@ watch(() => props.enemies, (newVal) => {
 
 <style scoped>
 ul {
-  margin-top: 2rem;
-  flex: 1;
-  position: relative;
+  border: 2px solid rgb(98, 110, 95);
+  border-radius: 0.5em;
+  padding: 10px;
+  list-style-type: none;
+  place-items: center;
+  padding: 10px;
+  margin: 3px;
 }
 
-.warning{
-padding: .5rem;
-font-weight: bold;
-font-size: 1rem;
-border: 1px solid red;
-background-color: orange;
-margin-top: 5px;
-border-radius: 20%;
+img {
+  padding: 10px;
+  transition: transform .5s;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
 }
 
+img:hover {
+  -ms-transform: scale(1.5);
+  /* IE 9 */
+  -webkit-transform: scale(1.5);
+  /* Safari 3-8 */
+  transform: scale(1.5);
+}
 
+.pickhero {
+  padding: 0.3rem;
+  font-weight: bold;
+  font-size: 1rem;
+  border: 1px solid rgb(0, 162, 255);
+  background-color: rgb(24, 202, 18);
+  border-radius: 20%;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: dodgerblue;
+  padding: 10px;
+}
 </style>
