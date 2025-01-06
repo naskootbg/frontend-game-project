@@ -5,8 +5,7 @@ const props = defineProps({
 
   id: Number,
   attack: Number,
-  armor: Number,
-  health: Number,
+  resistance: Number,
   name: String,
 
 })
@@ -21,25 +20,25 @@ const levelUp = false;
 
 <template>
 
-  <div class="details">
-    <h3>Total enemy is {{ name }}</h3>
-    <ul>
+  <ul>
+    <h3>The enemy is {{ name }}</h3>
+    <li>Attack: <span>{{ attack }}</span></li>
+    <li>Resistance: <span>{{ resistance }}</span></li>
 
-      <li>Attack: <span>{{ attack }}</span></li>
-      <li>Deffence: <span>{{ armor }}</span></li>
-      <li>Health: <span>{{ health }}</span></li>
+  </ul>
+  <slot></slot>
 
-
-    </ul>
-    <slot></slot>
-  </div>
 
 </template>
 
 <style scoped>
 ul {
-  margin-top: 2rem;
-  flex: 1;
-  position: relative;
+  border: 2px solid rgb(98, 110, 95);
+  border-radius: 0.5em;
+  padding: 10px;
+  list-style-type: none;
+  place-items: center;
+  padding: 10px;
+  margin: 3px;
 }
 </style>
