@@ -1,13 +1,15 @@
-<script>
-import Enemies from './components/Enemies.vue';
+<script setup>
+import AppNavigation from './components/AppNavigation.vue';
+import AppFooter from './components/AppFooter.vue';
 
-export default {
-  components: {
-    Enemies,
-  },
-};
 </script>
 
 <template>
+  <header>
+    <AppNavigation />
+  </header>
   <RouterView />
+  <footer>
+    <AppFooter />
+  </footer>
 </template>

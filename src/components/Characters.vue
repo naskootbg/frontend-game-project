@@ -26,7 +26,8 @@ function play(id) {
       <ul v-for="char in characters">
         <h2>{{ char.name }}</h2>
         <p>{{ char.about }}</p>
-        <img :src=char.image />
+        <a :href=play(char.id)><img :src=char.image /></a>
+
         <li>Attack: <span>{{ char.attack }}</span></li>
         <li>Deffence: <span>{{ char.armor }}</span></li>
         <li>Health: <span>{{ char.health }}</span></li>
@@ -62,14 +63,17 @@ ul {
 }
 
 img {
-  padding: 10px;
-  transition: transform .5s;
-  width: 200px;
+
+  transition: transform 5s;
+  width: auto;
   height: 200px;
   margin: 0 auto;
+  border-radius: 15%;
+  box-shadow: 10px 0 5px rgb(41, 124, 150), -10px 0 5px rgb(41, 124, 150);
 }
 
 img:hover {
+  box-shadow: none;
   -ms-transform: scale(1.5);
   /* IE 9 */
   -webkit-transform: scale(1.5);
@@ -91,5 +95,6 @@ img:hover {
   grid-template-columns: auto auto;
   background-color: dodgerblue;
   padding: 10px;
+  font-size: .8rem;
 }
 </style>
