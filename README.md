@@ -1,3 +1,12 @@
+# about
+Demo: https://frontend-game-project.onrender.com/
+
+Simple game. Try to beat my record of 22 killed monsters. Will add minigames between fights to restore extra health like snake, math games... but late.
+
+Backend endpoints: https://gamebackendnaskootbg.azurewebsites.net/swagger/index.html
+
+There have only one hidden page - admin page, where you can edit enemies' stats, but the backend not support this yet.
+
 # vue-project
 
 This template should help get you started developing with Vue 3 in Vite.
