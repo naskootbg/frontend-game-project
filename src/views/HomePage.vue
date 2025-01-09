@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
 import { GetAllCharacters } from '@/api/getCharacters';
 import Characters from '../components/Characters.vue';
 
@@ -15,6 +15,7 @@ async function AllCharacters() {
 AllCharacters();
 </script>
 <template>
-    <progress v-if="isLoading" />
+    <progress v-if="isLoading"></progress>
+
     <Characters v-else-if="allCharacters.length" :characters="allCharacters" />
 </template>

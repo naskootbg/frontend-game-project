@@ -1,9 +1,21 @@
 <script setup>
+import { doLogout } from '@/api/login';
+import { useUserStore } from '../stores/useUserStore';
+const userStore = useUserStore();
+
 const links = [
     { name: 'home', label: 'HOME' },
-    { name: 'login', label: 'LOGIN' },
-    { name: 'join', label: 'JOIN' },
+    { name: 'admin', label: 'ADMIN' },
+
 ];
+async function logout() {
+
+    await userStore.letLogout();
+    window.location.reload(true);
+
+}
+
+
 
 </script>
 
@@ -16,8 +28,13 @@ const links = [
                     <button type="button" :class="[isActive ? 'primary' : 'primary outline']">
                         {{ link.label }}
                     </button>
+
                 </router-link>
+
             </li>
+            <li><button type="button" class="danger" @click="logout">
+                    LOGOUT
+                </button></li>
         </ul>
     </nav>
 </template>
@@ -40,5 +57,10 @@ h1 {
 ul {
     display: flex;
     gap: 1rem;
+}
+
+.danger {
+    background-color: red;
+
 }
 </style>
